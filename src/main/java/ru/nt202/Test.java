@@ -41,12 +41,15 @@ public class Test {
         showImage(testImage);
         showImage(class1Result);
         showImage(class2Result);
+
+        showCovarianceMatrix(class1CovarianceMatrix);
+        showCovarianceMatrix(class2CovarianceMatrix);
     }
 
     private void loadTestImage() {
         try {
             testImage = ImageIO.read(Main.class.getClass().
-                    getResourceAsStream("/test/0.jpg"));
+                    getResourceAsStream("/test/0.jpg")); // Change to needed
             height = testImage.getHeight();
             width = testImage.getWidth();
         } catch (IOException e) {
@@ -116,5 +119,9 @@ public class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void showCovarianceMatrix(INDArray classCovarianceMatrix) {
+        System.out.println(classCovarianceMatrix);
     }
 }

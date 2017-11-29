@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="13.5">ru.nt202.Train</node>
+    <node x="550.0" y="0.0">ru.nt202.Test</node>
+    <node x="456.75" y="527.0">ru.nt202.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.nt202.Main" target="ru.nt202.Test">
+      <point x="47.5" y="-29.5" />
+      <point x="599.25" y="502.0" />
+      <point x="838.5" y="502.0" />
+      <point x="0.0" y="238.5" />
+    </edge>
+    <edge source="ru.nt202.Main" target="ru.nt202.Train">
+      <point x="-47.5" y="-29.5" />
+      <point x="504.25" y="502.0" />
+      <point x="265.0" y="502.0" />
+      <point x="0.0" y="225.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7448844884488451" x="558.0252547629594" y="314.6774479397429" />
+  <SelectedNodes>
+    <node>ru.nt202.Train</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

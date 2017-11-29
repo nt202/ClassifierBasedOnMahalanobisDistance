@@ -103,7 +103,7 @@ public class Train {
             for (Integer[] values : classPixels) {
                 for (int i = 0; i < PARAMETERS_QUANTITY; i++) {
                     for (int j = 0; j < PARAMETERS_QUANTITY; j++) {
-                        sums[i][j] += (long) ((values[i] - class1MeanValues[i]) * (values[j] * class1MeanValues[j]));
+                        sums[i][j] += (long) ((values[i] - class1MeanValues[i]) * (values[j] - class1MeanValues[j]));
                     }
                 }
             }
@@ -116,7 +116,7 @@ public class Train {
             for (Integer[] values : classPixels) {
                 for (int i = 0; i < PARAMETERS_QUANTITY; i++) {
                     for (int j = 0; j < PARAMETERS_QUANTITY; j++) {
-                        sums[i][j] += (long) ((values[i] - class2MeanValues[i]) * (values[j] * class2MeanValues[j]));
+                        sums[i][j] += (long) ((values[i] - class2MeanValues[i]) * (values[j] - class2MeanValues[j]));
                     }
                 }
             }
